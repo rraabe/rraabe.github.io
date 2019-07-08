@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Projects</title>
+  <script src="https://kit.fontawesome.com/3790183da0.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+
+
+</style>
+
+<body>
+  <div class="main">
+    <section id="header">
+      <div id="topnav">
+        <a href="index.html" class="active">Home</a>
+
+        <div id="myLinks">
+          <a href="about-me.html">About Me</a>
+          <a href="projects.html">My Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://github.com/rraabe?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </section>
+
+    <h1>My Projects:<br>Learning the Fundamentals of Web Development</h1>
+    <div id="project-wrapper">
+      <div id="guess-the-number" class="project">
+        <h1>Guess the Number</h1>
+        <img src="images/guess-the-number-pic.jpg">
+        <div class="textbox">
+          <p class="project-text">
+            The purpose of this project was to develop a command line interface game that would take user input using
+            <a class="link-in-text"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" target="_blank"
+              rel="noopener">
+              await
+            </a>
+            defining a range of numbers and have the computer guess the number in the minimum number of tries. The game
+            then switches to having
+            the computer pick a number and the player guesses. Wins and total guesses are tracked across a session and
+            reported in a summary at
+            the end. This project uses exclusively JavaScript and a terminal.
+          </p>
+        </div>
+      </div>
+
+      <div id="zorkington" class="project">
+        <h1>Zorkington</h1>
+        <img src="images/ZorkingtonPic.jpg">
+        <div class="textbox">
+          <p class="project-text">
+            This project was also built for use in a terminal using exclusively JavaScript. The purpose of this project
+            was to use
+            <a class="link-in-text"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank"
+              rel="noopener">
+              objects, methods, and classes
+            </a>
+            to create a world and track a user through a choose your own adventure. The scope was limited to only a few
+            rooms but the structure of the game allows for quick and easy implementation of additional rooms, items, and
+            interactions.
+          </p>
+        </div>
+      </div>
+
+      <div id="tic-tac-toe" class="project">
+        <h1>Tic Tac Toe</h1>
+        <img src="images/tic-tac-toe-pic.jpg">
+        <div class="textbox">
+          <p class="project-text">
+            Our first web-based project. This Tic-Tac-Toe game uses HTML, CSS, and JavaScript and was our first foray
+            into
+            <a class="link-in-text"
+              href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" target="_blank"
+              rel="noopener">
+              events
+            </a>
+            , and more specifically,
+            <a class="link-in-text" href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
+              target="_blank" rel="noopener">
+              listeners
+            </a>
+            . Using an event listener on the board element allowed me to capture where the user was clicking and then
+            use JavaScript and some logic to enter either an X
+            or an O. Some additional logic also allows the computer to play against the player by tracking which cells
+            are available. The computer can even play against
+            itself. Future work on this project will start with refactoring the code to implement the board as an object
+            with the functions currently used moved to
+            methods on the board object. This will allow for less explicit coding and more flexibility in future game
+            modes and design. Additionally, more AI logic
+            will be added to allow the computer to pick non-randomly. Ideally, selecting a difficulty level will select
+            different AI logic.
+          </p>
+        </div>
+      </div>
+
+      <div id="remock" class="project">
+        <h1>Remock</h1>
+        <img src="images/remock-pic.jpg">
+        <div class="textbox">
+          <p class="project-text">
+            For this project, we were tasked with designing a website to match pictures we were given. This project used
+            HTML and CSS with a focus on
+            <a class="link-in-text" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+              target="_blank" rel="noopener">flexbox</a>
+            ,
+            <a class="link-in-text" href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" target="_blank"
+              rel="noopener">CSS grid</a>
+            , and
+            <a class="link-in-text" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms" target="_blank"
+              rel="noopener">forms</a>
+            .
+            This was also our first multi-page project which allowed us to use anchor tags and elements that responded
+            to hovering and clicking. While not required for this project,
+            we attempted to use CSS that allowed our website to scale reasonably well. This involved using fractional
+            sizes in our grids and vh/vw units for our element sizing. These
+            fairly simple techniques allowed for resizing of all text and elements on the page.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="nav-arrow-container">
+      <button class="nav-arrows" onclick="window.location.href = 'index.html';">
+        &#171;<span class="nav-arrow-text">HOME</span>
+      </button>
+      <button class="nav-arrows" onclick="window.location.href = 'experience.html';">
+        <span class="nav-arrow-text">EXPERIENCE</span>&#187;
+      </button>
+    </div>
+
+    <section id="footer">
+      <div id="footer-links">
+        <a href="https://www.facebook.com/richard.raabe.7">
+          <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/richard-raabe-84688280/">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

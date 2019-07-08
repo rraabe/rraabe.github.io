@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Richard Raabe</title>
+  <script src="https://kit.fontawesome.com/3790183da0.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-  <h1>
-    Hello World!
-  </h1>
+
+  <div id="intro-image">
+    <img src="images/coffee.jpg">
+    <span id="intro-text">Hello. I'm <span class="important-text">Richard Raabe</span>.
+      <br>I'm a web developer in training.</span>
+    <a href="#topnav">Want to know more?<br /><i class="fas fa-angle-double-down"></i></a>
+  </div>
+
+  <div class="main">
+
+    <!-- Top navigation bar start -->
+    <div id="topnav">
+      <a href="index.html" class="active">Home</a>
+
+      <div id="myLinks" class="text-in-textbox">
+        <a href="about-me.html">About Me</a>
+        <a href="projects.html">My Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/rraabe?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i style="color: white;" class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Top navigation bar end -->
+
+    <img id="bio-pic" src="images/0263a.jpg" /><img />
+    <div class="textbox">
+      <p id="philosophy" class="text-in-textbox">
+        I'm starting a new career in web development after a decade of scientific research, testing, and product
+        development.
+        I bring a rigorous work ethic, strong QC skills, and a career built on testing hypotheses and solving problems.
+      </p>
+    </div>
+
+    <section id="nav-tiles">
+      <a href="about-me.html"><i class="fa fa-user fa-2x"></i><span class="nav-text">About Me</span></a>
+      <a href="projects.html"><i class="fas fa-code fa-2x"></i><span class="nav-text">Projects</span></a>
+      <a href="experience.html"><i class="fas fa-vials fa-2x"></i><span class="nav-text">Experience</span></a>
+      <a href="contact.html"><i class="fas fa-phone-alt fa-2x"></i><span class="nav-text">Contact</span></a>
+      <a href="https://github.com/rraabe?tab=repositories"><i class="fab fa-github-square fa-2x"></i><span
+          class="nav-text">GitHub</span></a>
+    </section>
+
+    <section id="footer">
+      <div id="footer-links">
+        <a href="https://www.facebook.com/richard.raabe.7">
+          <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/richard-raabe-84688280/">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      </div>
+    </section>
+  </div>
 </body>
+
 </html>

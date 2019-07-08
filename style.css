@@ -1,0 +1,450 @@
+/*Scroll-behavior is not supported in many browsers. When refactoring change this to be control by the Javascript */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Full page intro image and text on the homepage */
+#intro-image {
+  position: relative;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#intro-image > img {
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat center center fixed;
+  background-size: cover;
+}
+
+#intro-text {
+  width: 100%;
+  text-align: center;
+  font-size: 6vw;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+#intro-image > a {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 6vw;
+  text-align: center;
+  padding: 10px 0px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#intro-image i {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+}
+
+/*----------Top navigation bar CSS Starts-----------------*/
+/* Style the navigation menu */
+#topnav {
+  overflow: hidden;
+  background-color: rgba(73, 93, 131, 0.479);
+  position: relative;
+  border-radius: 3px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+#topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 5vw;
+  display: block;
+}
+
+#topnav a.icon {
+  background-color: rgba(73, 93, 131, 0.479);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+#topnav a.icon i {
+  color: white;
+}
+
+/* Adds a grey background color on mouse-over */
+#myLinks a:hover {
+  background-color: rgba(73, 93, 131, 0.479);
+}
+#topnav a:hover {
+  background-color: rgba(73, 93, 131, 0.479);
+}
+
+/*------------------------Top Navigation Bar CSS Ends-----------------*/
+
+/*General formatting*/
+.important-text {
+  font-weight: bolder;
+  color: rgb(144, 200, 238);
+}
+
+.text-in-textbox {
+  padding: 1vw 0;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 5vw;
+}
+
+.project-text {
+  padding: 1vw 0;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4vw;
+}
+
+a[href] {
+  text-decoration: none;
+}
+
+.text-in-textbox p,
+a {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.centered {
+  text-align: center;
+}
+
+.main {
+  background-image: url("images/wood.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/*For all text box elements*/
+.textbox {
+  background-color: rgba(211, 226, 226, 0.479);
+  border-radius: 3px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 10vw;
+  height: auto;
+  padding: 0px 10px;
+  text-align: justify;
+}
+
+/*Home page specific CSS*/
+#bio-pic {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 50vw;
+  height: 50vw;
+  margin-top: 20px;
+  border: 2px solid grey;
+}
+
+.project img {
+  display: block;
+  border-style: inset;
+  border: 3px inset lightblue;
+  width: 90vw;
+  margin: auto;
+}
+
+.project h1 {
+  margin-top: 50px;
+}
+/*Experience Page specific CSS*/
+#resume-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#resume-wrapper > a {
+  margin: auto;
+}
+
+#philosophy {
+  font-size: 5vw;
+  text-align: justify;
+  padding: 0 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+#nav-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+#nav-tiles > a {
+  background-color: white;
+  border-radius: 3px;
+  width: 20vw;
+  border: 1px solid rgb(90, 90, 90);
+  margin: 15px 5px;
+  text-decoration: none;
+}
+
+#nav-tiles a:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+#nav-tiles i {
+  color: rgb(90, 90, 90);
+  text-align: center;
+}
+
+#nav-tiles > a > i {
+  margin: 5px 25px;
+}
+
+.fa,
+.fas,
+.fab {
+  display: block;
+  margin: 0;
+}
+
+.nav-text {
+  display: block;
+  color: rgb(90, 90, 90);
+  font-size: 4vw;
+  text-align: center;
+}
+
+.link-in-text {
+  text-decoration: none;
+  color: rgb(144, 200, 238);
+  font-weight: bold;
+}
+
+#timeline {
+  width: 75%;
+  margin: auto;
+}
+
+#timeline p {
+  border-top: 2px solid rgb(144, 200, 238);
+  border-radius: 2%;
+  margin: 0;
+  padding: 30px;
+  font-size: 4vw;
+  text-align: center;
+}
+
+#timeline p:nth-child(odd) {
+  border-right: 2px solid rgb(144, 200, 238);
+  border-top-left-radius: 0%;
+  margin-left: px;
+  margin-top: -2px;
+}
+
+#timeline p:nth-child(even) {
+  border-left: 2px solid rgb(144, 200, 238);
+  border-top-right-radius: 0%;
+  margin-right: 3px;
+  margin-top: -2px;
+}
+
+#timeline p:first-child {
+  border-top: none;
+  border-top-right-radius: 3px;
+}
+
+#timeline p:last-child {
+  border-bottom-left-radius: 0%;
+  margin-bottom: 20px;
+}
+
+.bolder {
+  font-size: 6vw;
+}
+
+/*All the footer CSS*/
+#footer-links {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.514);
+  margin-top: 10vw;
+  justify-content: space-around;
+}
+
+#footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-arrow-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-arrows {
+  background: none;
+  border: none;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20vw;
+}
+
+.nav-arrow-text {
+  font-size: 6vw;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+@media (min-width: 600px) {
+  #intro-text {
+    font-size: 3vw;
+  }
+
+  #intro-image img {
+    height: auto;
+    width: 100vw;
+  }
+  #intro-image > a {
+    font-size: 3vw;
+    width: 30vw;
+    border: 5px solid white;
+  }
+  #topnav {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+  #topnav #myLinks {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+    display: inline-block;
+    padding: 0;
+  }
+  #topnav a {
+    font-size: 1.5vw !important;
+  }
+  .active {
+    align-self: center;
+  }
+  .icon {
+    display: none !important;
+  }
+  #topnav #myLinks a {
+    border-left: 2px solid grey;
+  }
+  #topnav #myLinks:hover {
+    color: red;
+  }
+  #bio-pic {
+    width: 25vw;
+    height: 25vw;
+    margin: 50px auto 0px auto;
+    border: 2px solid grey;
+  }
+
+  .textbox {
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .text-in-textbox {
+    font-size: 1.5vw !important;
+  }
+  #nav-tiles > a {
+    background: none !important;
+    border: none !important;
+    width: 30% !important;
+  }
+  #nav-tiles i {
+    color: white !important;
+    font-size: 3vw !important;
+  }
+  #nav-tiles span {
+    color: white !important;
+    font-size: 3vw !important;
+  }
+
+  .project img {
+    width: 25vw;
+  }
+
+  .project-text {
+    font-size: 1vw;
+  }
+
+  #project-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+      ". guess-the-number zorkington ."
+      ". tic-tac-toe remock .";
+  }
+
+  #guess-the-number {
+    grid-area: guess-the-number;
+  }
+
+  #zorkington {
+    grid-area: zorkington;
+  }
+
+  #tic-tac-toe {
+    grid-area: tic-tac-toe;
+  }
+
+  #remock {
+    grid-area: remock;
+  }
+
+  #project-wrapper .textbox {
+    width: 25vw;
+  }
+
+  #timeline p {
+    font-size: 1.5vw;
+  }
+
+  #timeline span {
+    font-size: 1.5vw;
+  }
+
+  .bolder {
+    font-size: 2.5vw;
+    color: white;
+  }
+
+  #nav-arrow-container {
+    display: none;
+  }
+}
